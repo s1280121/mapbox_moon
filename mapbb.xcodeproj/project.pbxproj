@@ -11,7 +11,35 @@
 		390BEFEF2B1666A400DA1795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390BEFEE2B1666A400DA1795 /* ContentView.swift */; };
 		390BEFF12B1666A600DA1795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390BEFF02B1666A600DA1795 /* Assets.xcassets */; };
 		390BEFF42B1666A600DA1795 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390BEFF32B1666A600DA1795 /* Preview Assets.xcassets */; };
+		390BEFFF2B16670D00DA1795 /* MapboxMobileEvents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFC2B16670D00DA1795 /* MapboxMobileEvents.xcframework */; };
+		390BF0002B16670D00DA1795 /* MapboxMobileEvents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFC2B16670D00DA1795 /* MapboxMobileEvents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390BF0012B16670D00DA1795 /* Turf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFD2B16670D00DA1795 /* Turf.xcframework */; };
+		390BF0022B16670D00DA1795 /* Turf.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFD2B16670D00DA1795 /* Turf.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390BF0032B16670D00DA1795 /* MapboxMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFE2B16670D00DA1795 /* MapboxMaps.xcframework */; };
+		390BF0042B16670D00DA1795 /* MapboxMaps.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BEFFE2B16670D00DA1795 /* MapboxMaps.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390BF0082B16671700DA1795 /* MapboxCoreMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */; };
+		390BF0092B16671700DA1795 /* MapboxCoreMaps.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		390BF00A2B16671700DA1795 /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0072B16671700DA1795 /* MapboxCommon.xcframework */; };
+		390BF00B2B16671700DA1795 /* MapboxCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0072B16671700DA1795 /* MapboxCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		390BF0052B16670D00DA1795 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				390BF0022B16670D00DA1795 /* Turf.xcframework in Embed Frameworks */,
+				390BF00B2B16671700DA1795 /* MapboxCommon.xcframework in Embed Frameworks */,
+				390BF0002B16670D00DA1795 /* MapboxMobileEvents.xcframework in Embed Frameworks */,
+				390BF0092B16671700DA1795 /* MapboxCoreMaps.xcframework in Embed Frameworks */,
+				390BF0042B16670D00DA1795 /* MapboxMaps.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		390BEFE92B1666A400DA1795 /* mapbb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapbb.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +47,12 @@
 		390BEFEE2B1666A400DA1795 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		390BEFF02B1666A600DA1795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390BEFF32B1666A600DA1795 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		390BEFFA2B1666C300DA1795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		390BEFFC2B16670D00DA1795 /* MapboxMobileEvents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxMobileEvents.xcframework; path = ../../../Downloads/artifacts/MapboxMobileEvents.xcframework; sourceTree = "<group>"; };
+		390BEFFD2B16670D00DA1795 /* Turf.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Turf.xcframework; path = ../../../Downloads/artifacts/Turf.xcframework; sourceTree = "<group>"; };
+		390BEFFE2B16670D00DA1795 /* MapboxMaps.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxMaps.xcframework; path = ../../../Downloads/artifacts/MapboxMaps.xcframework; sourceTree = "<group>"; };
+		390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreMaps.xcframework; path = ../../../Downloads/artifacts/MapboxCoreMaps.xcframework; sourceTree = "<group>"; };
+		390BF0072B16671700DA1795 /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = ../../../Downloads/artifacts/MapboxCommon.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390BF0012B16670D00DA1795 /* Turf.xcframework in Frameworks */,
+				390BF00A2B16671700DA1795 /* MapboxCommon.xcframework in Frameworks */,
+				390BEFFF2B16670D00DA1795 /* MapboxMobileEvents.xcframework in Frameworks */,
+				390BF0082B16671700DA1795 /* MapboxCoreMaps.xcframework in Frameworks */,
+				390BF0032B16670D00DA1795 /* MapboxMaps.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +76,7 @@
 			children = (
 				390BEFEB2B1666A400DA1795 /* mapbb */,
 				390BEFEA2B1666A400DA1795 /* Products */,
+				390BEFFB2B16670D00DA1795 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +91,7 @@
 		390BEFEB2B1666A400DA1795 /* mapbb */ = {
 			isa = PBXGroup;
 			children = (
+				390BEFFA2B1666C300DA1795 /* Info.plist */,
 				390BEFEC2B1666A400DA1795 /* mapbbApp.swift */,
 				390BEFEE2B1666A400DA1795 /* ContentView.swift */,
 				390BEFF02B1666A600DA1795 /* Assets.xcassets */,
@@ -67,6 +108,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		390BEFFB2B16670D00DA1795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				390BF0072B16671700DA1795 /* MapboxCommon.xcframework */,
+				390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */,
+				390BEFFE2B16670D00DA1795 /* MapboxMaps.xcframework */,
+				390BEFFC2B16670D00DA1795 /* MapboxMobileEvents.xcframework */,
+				390BEFFD2B16670D00DA1795 /* Turf.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +130,7 @@
 				390BEFE52B1666A400DA1795 /* Sources */,
 				390BEFE62B1666A400DA1795 /* Frameworks */,
 				390BEFE72B1666A400DA1795 /* Resources */,
+				390BF0052B16670D00DA1795 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +329,7 @@
 				DEVELOPMENT_TEAM = GLHS93N3NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mapbb/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +359,7 @@
 				DEVELOPMENT_TEAM = GLHS93N3NH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mapbb/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
