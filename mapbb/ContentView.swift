@@ -23,7 +23,7 @@
 //    override public func viewDidLoad() {
 //        super.viewDidLoad()
 //
-//        let myResourceOptions = ResourceOptions(accessToken: "sk.eyJ1IjoiYXJhaGFydXRvIiwiYSI6ImNscGltMHVlcDAwcW0ycHM2NGUwdTg5dzgifQ.4_9gnEZcz_G3_qAvu7uD4g")
+//        let myResourceOptions = ResourceOptions(accessToken: "accessToken")
 //        let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: 0, longitude: 0), zoom: 0.1)
 //
 //        let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions, styleURI: StyleURI(rawValue: "mapbox://styles/araharuto/clpika41t007l01olast88bzu"))
@@ -40,7 +40,7 @@
 //        coordinatesLabel.alpha = 0.7
 //        coordinatesLabel.layer.cornerRadius = 5
 //        coordinatesLabel.clipsToBounds = true
-//        
+//
 //        self.view.addSubview(coordinatesLabel)
 //
 //        // Set up tap gesture recognizer
@@ -51,7 +51,7 @@
 //            // Handle map loaded event if needed
 //        }
 //    }
-//    
+//
 //    @objc private func handleMapTap(sender: UITapGestureRecognizer) {
 //        // タップした地図上の点の座標を取得
 //        let point = sender.location(in: mapView)
@@ -132,7 +132,7 @@ class MapViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-                let myResourceOptions = ResourceOptions(accessToken: "sk.eyJ1IjoiYXJhaGFydXRvIiwiYSI6ImNscGltMHVlcDAwcW0ycHM2NGUwdTg5dzgifQ.4_9gnEZcz_G3_qAvu7uD4g")
+                let myResourceOptions = ResourceOptions(accessToken: "accessToken")
                 let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: 0, longitude: 0), zoom: 0.1)
         
                 let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions, styleURI: StyleURI(rawValue: "mapbox://styles/araharuto/clpika41t007l01olast88bzu"))
@@ -177,4 +177,3 @@ class MapViewController: UIViewController {
 #Preview {
     ContentView()
 }
-
