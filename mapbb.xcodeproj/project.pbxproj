@@ -21,6 +21,7 @@
 		390BF0092B16671700DA1795 /* MapboxCoreMaps.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		390BF00A2B16671700DA1795 /* MapboxCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0072B16671700DA1795 /* MapboxCommon.xcframework */; };
 		390BF00B2B16671700DA1795 /* MapboxCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390BF0072B16671700DA1795 /* MapboxCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		39381D792B265F9500FAE792 /* SpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39381D782B265F9500FAE792 /* SpectrumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		390BEFFE2B16670D00DA1795 /* MapboxMaps.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxMaps.xcframework; path = ../../../Downloads/artifacts/MapboxMaps.xcframework; sourceTree = "<group>"; };
 		390BF0062B16671700DA1795 /* MapboxCoreMaps.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCoreMaps.xcframework; path = ../../../Downloads/artifacts/MapboxCoreMaps.xcframework; sourceTree = "<group>"; };
 		390BF0072B16671700DA1795 /* MapboxCommon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapboxCommon.xcframework; path = ../../../Downloads/artifacts/MapboxCommon.xcframework; sourceTree = "<group>"; };
+		39381D782B265F9500FAE792 /* SpectrumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectrumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				390BEFFA2B1666C300DA1795 /* Info.plist */,
 				390BEFEC2B1666A400DA1795 /* mapbbApp.swift */,
 				390BEFEE2B1666A400DA1795 /* ContentView.swift */,
+				39381D782B265F9500FAE792 /* SpectrumView.swift */,
 				390BEFF02B1666A600DA1795 /* Assets.xcassets */,
 				390BEFF22B1666A600DA1795 /* Preview Content */,
 			);
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				390BEFEF2B1666A400DA1795 /* ContentView.swift in Sources */,
+				39381D792B265F9500FAE792 /* SpectrumView.swift in Sources */,
 				390BEFED2B1666A400DA1795 /* mapbbApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
