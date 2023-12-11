@@ -7,7 +7,7 @@ class MapViewModel: ObservableObject {
 
 struct ContentView: View {
     @StateObject private var mapViewModel = MapViewModel()
-//    @State var showingPopUp = false
+    @State var showingPopUp = false
 
 
     var body: some View {
@@ -19,33 +19,29 @@ struct ContentView: View {
                 Text("Tapped Coordinates: \(tappedCoordinates.latitude), \(tappedCoordinates.longitude)")
                     .foregroundColor(.black)
                     .padding()
-//                Button(action: {
-//                    withAnimation {
-//                        showingPopUp = true
-//                    } //trueにしないと画面遷移されない
-//                }, label: {
-//                    Text("View Spectra")
-//                    .padding()
-//                    .background(Color.white)
-//                    .cornerRadius(12)
-//                })
-//                .fullScreenCover(isPresented: $showingPopUp) { //フルスクリーンの画面遷移
-//                    PopupView(isPresent: $showingPopUp, info: url, Lat: tappedCoordinates.latitude, Lon: tappedCoordinates.longitude)
-//            }
+                if(Int(tappedCoordinates.latitude)<=85){
+                    Button(action: {
+                        withAnimation {
+                            showingPopUp = true
+                        } //trueにしないと画面遷移されない
+                    }, label: {
+                        Text("View Spectra")
+                            .padding()
+                            .background(Color.white)
+                            .cornerRadius(12)
+                    })
+                    .fullScreenCover(isPresented: $showingPopUp) { //フルスクリーンの画面遷移
+                        PopupView(isPresent: $showingPopUp, Lat: tappedCoordinates.latitude, Lon: tappedCoordinates.longitude)
+                    }
+                } else {
+                    Text("※Spectra can be viewed from S85° to N85°.")
 
+                }
             }
         }
     }
 }
-//
-//struct PopupView: View {
-//    var info:String
-//    @State var coordinate:[String]
-//    
-//    var body: some View {
-//        VStack {}
-//    }
-//}
+
 
 struct MapBoxMapView: View {
     @ObservedObject var mapViewModel: MapViewModel
@@ -92,7 +88,7 @@ class MapViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        let myResourceOptions = ResourceOptions(accessToken: "accessToken")
+        let myResourceOptions = ResourceOptions(accessToken: "accesstoken")
         let cameraOptions = CameraOptions(center: CLLocationCoordinate2D(latitude: 0, longitude: 0), zoom: 0.1)
         
         let myMapInitOptions = MapInitOptions(resourceOptions: myResourceOptions, cameraOptions: cameraOptions, styleURI: StyleURI(rawValue: "mapbox://styles/araharuto/clpvzh143007x01rd13px558d"))
